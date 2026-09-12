@@ -1,0 +1,47 @@
+{
+  "name": "professor29-md-bot",
+  "version": "2.0.0",
+  "description": "WhatsApp Bot Base \u2014 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀, powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀",
+  "main": "index.js",
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "latest",
+    "axios": "latest",
+    "body-parser": "^1.20.2",
+    "cors": "latest",
+    "chalk": "^4.1.2",
+    "dotenv": "latest",
+    "express": "^4.18.2",
+    "node-fetch": "^2.7.0",
+    "sharp": "^0.32.6",
+    "@distube/ytdl-core": "^4.16.12",
+    "node-telegram-bot-api": "^0.66.0",
+    "fs-extra": "^11.2.0",
+    "pino": "^8.17.0",
+    "@octokit/rest": "^20.0.2",
+    "denethdev-ytmp3": "1.0.3",
+    "cheerio": "latest",
+    "ruhend-scraper": "9.0.1",
+    "yt-search": "latest",
+    "fluent-ffmpeg": "^2.1.2",
+    "wa-sticker-formatter": "^4.4.4",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "file-type": "21.0.0",
+    "mongoose": "^8.0.0",
+    "moment-timezone": "^0.6.0",
+    "@bochilteam/scraper": "latest",
+    "@vitalets/google-translate-api": "^8.0.0",
+    "ffmpeg-static": "^5.2.0",
+    "form-data": "^4.0.0",
+    "javascript-obfuscator": "^4.1.0",
+    "mumaker": "latest",
+    "node-webpmux": "^3.1.7",
+    "qrcode": "^1.5.3",
+    "adm-zip": "^0.5.10"
+  }
+}
