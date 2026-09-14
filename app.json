@@ -1,9 +1,9 @@
 {
-  "name": "⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀",
-  "description": "WhatsApp bot with pairing-code login, group admin tools, and an admin dashboard — powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀",
+  "name": "𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱",
+  "description": "WhatsApp bot with pairing-code login, group admin tools, and an admin dashboard — powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱",
   "logo": "",
   "repository": "https://github.com/YOUR-GITHUB-USERNAME/AhmadShahzad-MD-Bot",
-  "keywords": ["⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀", "whatsapp-bot"],
+  "keywords": ["𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱", "whatsapp-bot"],
   "stack": "heroku-22",
   "success_url": "/",
   "buildpacks": [
@@ -24,7 +24,7 @@
     },
     "OWNER_NAME": {
       "description": "Name shown as the bot owner",
-      "value": "⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀",
+      "value": "𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅 ²⁹𓂃𝑅𝜦𝑍𝜦  🇦🇱",
       "required": false
     },
     "ADMIN_CODE": {
@@ -39,7 +39,7 @@
     },
     "MESSAGE": {
       "description": "Message attached with the session ID",
-      "value": "⚡ BY || ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 ⚡",
+      "value": "⚡ BY || 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 ⚡",
       "required": false
     }
   }

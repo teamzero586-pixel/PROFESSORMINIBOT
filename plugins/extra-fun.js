@@ -1,6 +1,6 @@
 // ============================================
-// 🎉 EXTRA FUN COMMANDS - ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀
-// 👑 Owner: ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀
+// 🎉 EXTRA FUN COMMANDS - 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱
+// 👑 Owner: 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱
 // .wife .husband .love .roast .fact .8ball .rate .simp .character
 // (.ship, .joke, .truth, .dare already exist under ported-commands/fun)
 // ============================================

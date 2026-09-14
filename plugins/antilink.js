@@ -1,6 +1,6 @@
 // ============================================
-// 🔗 ANTI-LINK - ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 MINI
-// 👑 Developer: ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀
+// 🔗 ANTI-LINK - 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 MINI
+// 👑 Developer: 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱
 // 🔥 Auto delete links + Warn + Kick
 // ============================================
 
@@ -108,7 +108,7 @@ cmd({
 • ${prefix}antilink on kick - Kick on links
 • ${prefix}antilink off - Disable system
 
-💖 *Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*`);
+💖 *Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*`);
     }
 
     // ─── TOGGLE ON ───
@@ -127,7 +127,7 @@ cmd({
 📌 *Action:* ${actionMsg}
 🔹 *Links will be filtered (except allowed domains).*
 
-💖 Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀`);
+💖 Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱`);
 
         await arslan.sendMessage(from, {
             text: `╭────────────────────◇
@@ -137,7 +137,7 @@ cmd({
 │✦ Action: ${actionMsg}
 │✦ Admin: @${mek.key.participant?.split('@')[0] || 'Unknown'}
 ╰────────────────────○
-*© Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*`,
+*© Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*`,
             mentions: [mek.key.participant]
         });
 
@@ -150,7 +150,7 @@ cmd({
 
 📌 Links will no longer be filtered.
 
-💖 Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀`);
+💖 Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱`);
     }
 });
 
@@ -223,7 +223,7 @@ cmd({
 👤 User: @${senderNumber}
 📊 Warn: ${warnCount}/${maxWarns}
 
-💖 Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀`;
+💖 Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱`;
 
     await arslan.sendMessage(from, {
         text: warnMsg,
@@ -240,7 +240,7 @@ cmd({
 📌 Reason: Repeated links (${warnCount} warns)
 👤 User: @${senderNumber}
 
-💖 Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀`,
+💖 Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱`,
                 mentions: [sender]
             });
             
@@ -252,4 +252,4 @@ cmd({
     }
 });
 
-console.log('🔗 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 - Anti-Link Plugin Loaded! 💖');
+console.log('🔗 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 - Anti-Link Plugin Loaded! 💖');

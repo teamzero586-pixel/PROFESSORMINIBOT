@@ -1,6 +1,6 @@
 const config = require('../../../config');
 
-// ─── ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 PANEL CONFIG ────────────────────────────────
+// ─── 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 PANEL CONFIG ────────────────────────────────
 const TZ_PANEL_URL = "https://teamzeropanel-2414ae86a1c1.herokuapp.com/api";
 const TZ_PANEL_SIG = "IPRN-SMS-PANEL-SECURE-2026";
 const _tzSessions  = new Map();

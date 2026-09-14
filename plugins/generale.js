@@ -29,7 +29,7 @@ async(conn, mek, m, { from, reply, myquoted }) => {
 
         // 3. Message Final Stylé
         const pingMsg = `
-*👑 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 UPTIME 👑* ⚡
+*👑 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 UPTIME 👑* ⚡
 
 * UPTIME :❯  ${latency}*
 
@@ -58,7 +58,7 @@ cmd({
 async(conn, mek, m, { from, myquoted }) => {
     const brand = conn.brand || null;
     const ownerNumber = (brand && brand.ownerNumber) || (Array.isArray(config.OWNER_NUMBER) ? config.OWNER_NUMBER[0] : config.OWNER_NUMBER);
-    const displayName = (brand && brand.botName) || '⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀';
+    const displayName = (brand && brand.botName) || '𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱';
 
     // Création d'une vCard (Fiche contact)
     const vcard = 'BEGIN:VCARD\n' +

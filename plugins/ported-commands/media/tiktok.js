@@ -91,11 +91,11 @@ module.exports = {
       // File system mein save karein
       fs.writeFileSync(filePath, videoRes.data);
 
-      const captionText = `*📥 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 TikTok HD*\n\n` +
+      const captionText = `*📥 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 TikTok HD*\n\n` +
         `👤 *Creator:* ${author}\n` +
         `📝 *Title:* ${title}\n` +
         `✨ *Quality:* Full HD (No Watermark)\n\n` +
-        `_Downloaded via ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀_`;
+        `_Downloaded via 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱_`;
 
       // WhatsApp par file send karein
       await sock.sendMessage(

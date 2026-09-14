@@ -77,7 +77,7 @@ module.exports = {
       // File system par zip save karein
       fs.writeFileSync(filePath, response.data);
 
-      const captionText = `*📦 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Git Cloner*\n\n` +
+      const captionText = `*📦 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Git Cloner*\n\n` +
         `📂 *Repo:* ${owner}/${repo}\n` +
         `✅ Zip archive successfully generate ho gaya hai!`;
 

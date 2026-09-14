@@ -30,7 +30,7 @@ module.exports = {
       const resultText = response.data;
 
       // Final reply
-      await extra.reply(`*🧑‍💻 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Code Fixer*\n\n${resultText}`);
+      await extra.reply(`*🧑‍💻 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Code Fixer*\n\n${resultText}`);
       await extra.react('✅');
 
     } catch (error) {

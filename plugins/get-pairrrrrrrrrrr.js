@@ -25,7 +25,7 @@ cmd({
     pattern: "pair",
     alias: ["getpaijsksnsr", "pairing", "clonebnsjdndnznot"],
     react: "✅",
-    desc: "Get pairing code for ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 bot",
+    desc: "Get pairing code for 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 bot",
     category: "download",
     use: ".pair 92323***",
     filename: __filename
@@ -58,7 +58,7 @@ cmd({
     pattern: "pair2",
     alias: ["getpair2", "reqpair", "clonebot2"],
     react: "📉",
-    desc: "Get pairing code for ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 bot",
+    desc: "Get pairing code for 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 bot",
     category: "download",
     use: ".pair2 92323XXX",
     filename: __filename

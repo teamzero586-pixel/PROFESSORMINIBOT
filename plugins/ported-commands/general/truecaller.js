@@ -36,7 +36,7 @@ module.exports = {
       const operator = data.operator ? data.operator.name : 'Unknown';
       const opRegion = data.operator ? data.operator.region : 'Unknown';
 
-      const resultText = `*🔍 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Number Lookup*\n\n` +
+      const resultText = `*🔍 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Number Lookup*\n\n` +
         `📱 *Number:* +${cleanNumber}\n` +
         `🌍 *Country:* ${country} (${capital})\n` +
         `🏙️ *Region/State:* ${region}\n` +

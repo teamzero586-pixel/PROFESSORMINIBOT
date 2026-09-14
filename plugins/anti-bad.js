@@ -1,6 +1,6 @@
 // ============================================
-// 🚫 ANTI-BAD WORDS - ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 MINI
-// 👑 Developer: ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀
+// 🚫 ANTI-BAD WORDS - 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 MINI
+// 👑 Developer: 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱
 // 🔥 Auto delete bad words + Warn + Kick
 // ============================================
 
@@ -94,7 +94,7 @@ cmd({
 • ${prefix}antibad on kick - Kick on bad words
 • ${prefix}antibad off - Disable system
 
-💖 *Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*`);
+💖 *Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*`);
     }
 
     // ─── TOGGLE ON ───
@@ -113,7 +113,7 @@ cmd({
 📌 *Action:* ${actionMsg}
 🔹 *Bad words will be filtered.*
 
-💖 Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀`);
+💖 Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱`);
 
         await arslan.sendMessage(from, {
             text: `╭────────────────────◇
@@ -123,7 +123,7 @@ cmd({
 │✦ Action: ${actionMsg}
 │✦ Admin: @${mek.key.participant?.split('@')[0] || 'Unknown'}
 ╰────────────────────○
-*© Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*`,
+*© Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*`,
             mentions: [mek.key.participant]
         });
 
@@ -136,7 +136,7 @@ cmd({
 
 📌 Bad words will no longer be filtered.
 
-💖 Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀`);
+💖 Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱`);
     }
 });
 
@@ -226,7 +226,7 @@ cmd({
 👤 User: @${senderNumber}
 📊 Warn: ${warnCount}/${maxWarns}
 
-💖 Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀`;
+💖 Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱`;
 
     await arslan.sendMessage(from, {
         text: warnMsg,
@@ -243,7 +243,7 @@ cmd({
 📌 Reason: Repeated bad words (${warnCount} warns)
 👤 User: @${senderNumber}
 
-💖 Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀`,
+💖 Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱`,
                 mentions: [sender]
             });
             
@@ -255,4 +255,4 @@ cmd({
     }
 });
 
-console.log('🚫 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 - Anti-Bad Words Plugin Loaded! 💖');
+console.log('🚫 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 - Anti-Bad Words Plugin Loaded! 💖');

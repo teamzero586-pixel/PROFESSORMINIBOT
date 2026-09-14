@@ -15,7 +15,7 @@ module.exports = {
       // Agar user ne error log nahi diya
       if (!errorLog) {
         return extra.reply(
-          `*🐛 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Code Debugger*\n\n` +
+          `*🐛 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Code Debugger*\n\n` +
           `Sahi tareeqa:\n` +
           `\`${prefix}debug TypeError: Cannot read properties of undefined (reading 'chats')\`\n\n` +
           `_Ya apne kharab code ka error paste karein._`
@@ -38,7 +38,7 @@ module.exports = {
         return extra.reply(`❌ AI debug solution nahi de saka. Dobara try karein.`);
       }
 
-      const formattedReply = `*🛠️ ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Debug Report*\n\n${aiSolution}`;
+      const formattedReply = `*🛠️ 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Debug Report*\n\n${aiSolution}`;
 
       await extra.reply(formattedReply);
       await extra.react('✅');

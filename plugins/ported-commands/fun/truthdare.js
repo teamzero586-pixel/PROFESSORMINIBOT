@@ -72,7 +72,7 @@ module.exports = {
         const type = isTrue ? '🔮 TRUTH' : '🔥 DARE';
 
         await extra.reply(
-          `*🎮 TRUTH OR DARE — ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*\n` +
+          `*🎮 TRUTH OR DARE — 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*\n` +
           `━━━━━━━━━━━━━━━━━━━━\n\n` +
           `👤 *${senderName}* ko mila: *${type}*\n\n` +
           `${result}\n\n` +
@@ -87,7 +87,7 @@ module.exports = {
       if (choice === 'truth') {
         const truth = TRUTHS[Math.floor(Math.random() * TRUTHS.length)];
         await extra.reply(
-          `*🔮 TRUTH — ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*\n` +
+          `*🔮 TRUTH — 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*\n` +
           `━━━━━━━━━━━━━━━━━━━━\n\n` +
           `👤 *${senderName}* — Sach bolna hoga! 😈\n\n` +
           `${truth}\n\n` +
@@ -97,7 +97,7 @@ module.exports = {
       } else {
         const dare = DARES[Math.floor(Math.random() * DARES.length)];
         await extra.reply(
-          `*🔥 DARE — ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*\n` +
+          `*🔥 DARE — 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*\n` +
           `━━━━━━━━━━━━━━━━━━━━\n\n` +
           `👤 *${senderName}* — Himmat hai toh karo! 😎\n\n` +
           `${dare}\n\n` +

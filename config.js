@@ -6,12 +6,12 @@
 // ██║  ██║██║  ██║███████║███████╗██║  ██║██║  ████║     ██║ ╚═╝ ██║██████╔╝
 // ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═══╝    ╚═╝     ╚═╝╚═════╝ 
 // ═══════════════════════════════════════════════════════════════════════════
-//                    ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 - BOT CONFIGURATION
+//                    𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 - BOT CONFIGURATION
 // ═══════════════════════════════════════════════════════════════════════════
 
 // ============================================
-// 🔥 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 - COMPLETE SETTINGS
-// 👑 Developer: ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀
+// 🔥 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 - COMPLETE SETTINGS
+// 👑 Developer: 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱
 // 🔥 GitHub Session System + All Features
 // ============================================
 
@@ -140,13 +140,13 @@ module.exports = {
      * @description Display name of the bot
      * @type {string}
      */
-    BOT_NAME: process.env.BOT_NAME || '⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀',
+    BOT_NAME: process.env.BOT_NAME || '𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱',
 
     /**
      * @description Owner name
      * @type {string}
      */
-    OWNER_NAME: process.env.OWNER_NAME || '⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀',
+    OWNER_NAME: process.env.OWNER_NAME || '𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅 ²⁹𓂃𝑅𝜦𝑍𝜦  🇦🇱',
 
     /**
      * @description Owner's WhatsApp numbers (multiple owners supported).
@@ -163,7 +163,7 @@ module.exports = {
      * @description Bot footer text
      * @type {string}
      */
-    BOT_FOOTER: process.env.BOT_FOOTER || '© POWERED BY ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀',
+    BOT_FOOTER: process.env.BOT_FOOTER || '© POWERED BY 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱',
 
     // ═══════════════════════════════════════════
     //  👁️ STATUS AUTOMATION
@@ -310,7 +310,7 @@ module.exports = {
     // ═══════════════════════════════════════════
 
     /**
-     * @description Public ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 channel — shown in .menu/.alive/.about etc.
+     * @description Public 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 channel — shown in .menu/.alive/.about etc.
      * @type {string}
      */
     CHANNEL_JID: process.env.CHANNEL_JID || '120363402491815380@newsletter',
@@ -411,7 +411,7 @@ module.exports = {
      * @description Repository link
      * @type {string}
      */
-    REPO: process.env.REPO || 'https://github.com/YOUR-GITHUB-USERNAME/⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀',
+    REPO: process.env.REPO || 'https://github.com/YOUR-GITHUB-USERNAME/𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱',
 
     // ═══════════════════════════════════════════
     //  🐛 DEBUG & LOGGING
@@ -486,8 +486,8 @@ module.exports = {
 
 /**
  * @module settings
- * @description ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Configuration Module
+ * @description 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Configuration Module
  * @version 2.0.0
- * @author ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀
+ * @author 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱
  * @license MIT
  */

@@ -32,7 +32,7 @@ module.exports = {
 
         userEmails.set(sender, email);
 
-        const replyText = `*📧 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Temp Mail*\n\n` +
+        const replyText = `*📧 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Temp Mail*\n\n` +
           `✅ *Aapki Temporary Email:*\n\`${email}\`\n\n` +
           `📥 *Inbox check karne ke liye likhein:*\n` +
           `_` + prefix + `tempmail inbox_\n\n` +
@@ -64,7 +64,7 @@ module.exports = {
 
         userEmails.set(sender, customEmail);
 
-        const replyText = `*📧 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Custom Temp Mail*\n\n` +
+        const replyText = `*📧 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Custom Temp Mail*\n\n` +
           `✅ *Aapki Custom Email Set Ho Gayi Hai:*\n\`${customEmail}\`\n\n` +
           `📥 *Inbox check karne ke liye likhein:*\n` +
           `_` + prefix + `tempmail inbox_`;

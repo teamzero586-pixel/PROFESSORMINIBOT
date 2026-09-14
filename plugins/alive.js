@@ -6,7 +6,7 @@ const { fakevCard } = require('../lib/fakevCard');
 const config = require("../config");
 
 let botStartTime = Date.now(); // Recording the start time of the bot
-const ALIVE_IMG = config.IMAGE_PATH; // ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 branding image
+const ALIVE_IMG = config.IMAGE_PATH; // 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 branding image
 
 cmd({
     pattern: "alive",
@@ -17,7 +17,7 @@ cmd({
 }, async (conn, mek, m, { reply, from }) => {
     try {
         const brand = conn.brand || null;
-        const botDisplayName = (brand && brand.botName) || config.BOT_NAME || '⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀';
+        const botDisplayName = (brand && brand.botName) || config.BOT_NAME || '𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱';
         const channelJid = (brand && brand.channelJid) || config.CHANNEL_JID;
         const channelName = botDisplayName;
 

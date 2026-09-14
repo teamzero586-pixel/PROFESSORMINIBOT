@@ -23,7 +23,7 @@ module.exports = {
       const encodedPrompt = encodeURIComponent(promptText);
       const imageUrl = `https://pollinations.ai/p/${encodedPrompt}?width=1024&height=1024&model=flux&seed=${Math.floor(Math.random() * 1000000)}&nologo=true`;
 
-      const captionText = `*🎨 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Flux AI Generator*\n\n` +
+      const captionText = `*🎨 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Flux AI Generator*\n\n` +
         `📝 *Prompt:* ${promptText}\n` +
         `⚡ *Model:* Flux.1 Ultra-Real`;
 

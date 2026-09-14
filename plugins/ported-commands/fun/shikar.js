@@ -37,16 +37,16 @@ const PRAISES = [
 ];
 
 const PUNISHMENTS = [
-  '🎤 Abhi voice note mein "Main ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 ka fan hoon" kaho!',
+  '🎤 Abhi voice note mein "Main 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 ka fan hoon" kaho!',
   '🤸 10 jumping jacks karo aur video bhejo!',
   '📸 Apni sabse funny selfie abhi group mein bhejo!',
   '✍️ "Main galat tha/thi" 10 baar type karo!',
   '🎵 30 second ka gana sunao voice note mein!',
   '🙏 Group ke har member ko sorry bolo!',
-  '👑 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 ki tarif mein 5 lines likho!',
+  '👑 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 ki tarif mein 5 lines likho!',
   '😂 Apna sab se sharmindagi wala moment share karo!',
   '🏃 Ghar mein 3 chakkar lagao — proof chahiye!',
-  '📢 Apna WhatsApp status lagao "⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 best bot hai" — 1 ghante ke liye!',
+  '📢 Apna WhatsApp status lagao "𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 best bot hai" — 1 ghante ke liye!',
 ];
 
 module.exports = {
@@ -85,7 +85,7 @@ module.exports = {
 
       // Dramatic targeting effect
       const aimText =
-        `*🎯 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 — SHIKAR MODE*\n` +
+        `*🎯 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 — SHIKAR MODE*\n` +
         `━━━━━━━━━━━━━━━━━━━━\n\n` +
         `👁️ Target lock ho raha hai...\n` +
         `@${targetPhone} 🔴\n\n` +
@@ -129,13 +129,13 @@ module.exports = {
       }
 
       const finalText =
-        `*${emoji} ${title} — ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*\n` +
+        `*${emoji} ${title} — 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*\n` +
         `━━━━━━━━━━━━━━━━━━━━\n\n` +
         `🎯 *Target:* @${targetPhone}\n` +
         `👑 *Owner ka Hukum!*\n\n` +
         `${content}\n\n` +
         `━━━━━━━━━━━━━━━━━━━━\n` +
-        `⚡ *Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*`;
+        `⚡ *Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*`;
 
       await sock.sendMessage(chatId, {
         text: finalText,

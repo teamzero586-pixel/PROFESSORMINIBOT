@@ -75,7 +75,7 @@ module.exports = {
         const endTime = Date.now() + minutes * 60 * 1000;
 
         const announceText =
-          `*🎁 GIVEAWAY SHURU! — ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*\n` +
+          `*🎁 GIVEAWAY SHURU! — 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*\n` +
           `━━━━━━━━━━━━━━━━━━━━\n\n` +
           `🏆 *Prize:* ${prize}\n` +
           `⏰ *Duration:* ${minutes} minutes\n` +
@@ -83,7 +83,7 @@ module.exports = {
           `👉 *${keyword}* 👈\n\n` +
           `━━━━━━━━━━━━━━━━━━━━\n` +
           `📢 Jaldi karo — ek hi winner hoga!\n` +
-          `⚡ *Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*`;
+          `⚡ *Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*`;
 
         await sock.sendMessage(chatId, { text: announceText });
 
@@ -176,7 +176,7 @@ async function pickWinner(sock, chatId, gw) {
       `👥 *Total Participants:* ${gw.participants.size}\n\n` +
       `━━━━━━━━━━━━━━━━━━━━\n` +
       `🎉 Congratulations! Owner se contact karo prize lene ke liye!\n` +
-      `⚡ *⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*`,
+      `⚡ *𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*`,
     mentions: [winnerJid]
   });
 }

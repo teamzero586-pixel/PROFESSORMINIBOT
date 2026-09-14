@@ -15,7 +15,7 @@ module.exports = {
       // Agar user ne requirement nahi di
       if (!promptText) {
         return extra.reply(
-          `*💻 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 AutoCode Generator*\n\n` +
+          `*💻 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 AutoCode Generator*\n\n` +
           `Sahi tareeqa:\n` +
           `\`${prefix}autocode WhatsApp bot ke liye ek weather command ki file banao jo axios use kare\`\n\n` +
           `_Apni requirement tafseel se likhein._`
@@ -39,7 +39,7 @@ module.exports = {
       }
 
       // Agar code bohot lamba ho toh text ya document ki shakal mein bhejna
-      const formattedReply = `*💻 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 AutoCode Result*\n\n` +
+      const formattedReply = `*💻 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 AutoCode Result*\n\n` +
         `📝 *Requirement:* ${promptText}\n\n` +
         `${generatedCode}`;
 

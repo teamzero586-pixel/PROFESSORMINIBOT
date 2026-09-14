@@ -127,7 +127,7 @@ Input: \`${query}\`
 ║ 🏠 *Address*  : ${r.address || 'N/A'}
 ╚════════════════════
 
-⚡ *Powered by ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*
+⚡ *Powered by 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*
 `;
 
         await sock.sendMessage(from, { text: replyText }, { quoted: msg });

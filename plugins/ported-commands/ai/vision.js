@@ -62,7 +62,7 @@ module.exports = {
       const response = await axios.get(aiUrl, { timeout: 30000 });
       const aiAnswer = response.data || "I have analyzed the image.";
 
-      const formattedReply = `*👁️ ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Vision AI*\n\n` +
+      const formattedReply = `*👁️ 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Vision AI*\n\n` +
         `📝 *Prompt:* ${promptText}\n\n` +
         `🤖 *Answer:*\n${aiAnswer}`;
 

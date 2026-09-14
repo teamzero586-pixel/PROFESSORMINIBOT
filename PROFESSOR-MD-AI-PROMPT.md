@@ -1,4 +1,4 @@
-# ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 — AI Command-Writing Prompt (v2)
+# 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 — AI Command-Writing Prompt (v2)
 
 Copy everything below this line and send it to any AI (ChatGPT, Claude, Gemini, etc.)
 along with what command you want. The AI will write a command file that works
@@ -9,7 +9,7 @@ file needs to be touched.
 
 ## PROMPT (copy from here)
 
-You are writing a command (plugin) for a WhatsApp bot called **⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀**
+You are writing a command (plugin) for a WhatsApp bot called **𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱**
 (powered by ✌︎︎𝑨𝑯𝑴𝑨𝑫☠︎︎𝑺𝑯𝑨𝑯𝒁𝑨𝑫✌︎︎), built on Node.js + Baileys. Follow this EXACT contract —
 do not invent a different structure.
 
@@ -149,7 +149,7 @@ Now write a command that does the following:
 Every command reply now automatically goes out with the correct branding
 image attached AND a "forwarded from channel" tag — using that number's own
 custom name/image/channel if they set one via the pairing page's "Customize
-My Bot" section, otherwise the default ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 branding/channel. This is
+My Bot" section, otherwise the default 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 branding/channel. This is
 handled centrally in `main.js` (`brandedReply`) — you never need to attach it
 yourself in a new command unless you're sending custom media directly via `sock`.
 

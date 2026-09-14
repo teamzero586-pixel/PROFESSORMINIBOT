@@ -1,5 +1,5 @@
 // ============================================
-// 🔌 PORTED COMMANDS COMPAT LOADER — ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀
+// 🔌 PORTED COMMANDS COMPAT LOADER — 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱
 // Bridges "ProBoy-MD style" command files
 // (module.exports = { name, execute(sock,msg,args,extra) })
 // into this bot's native cmd() system.

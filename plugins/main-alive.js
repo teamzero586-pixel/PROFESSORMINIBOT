@@ -26,13 +26,13 @@ async (conn, mek, m, { from, sender, reply }) => {
         *I AM ALIVE NOW 🤗♥️*
 *┏────〘 INFO 〙───⊷*
 *┃👑 MODE :❯ ${config.MODE || 'private'}*
-*┃👑 USER :❯ ${config.OWNER_NAME || '⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀'}*
+*┃👑 USER :❯ ${config.OWNER_NAME || '𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅 ²⁹𓂃𝑅𝜦𝑍𝜦  🇦🇱'}*
 *┃👑 PREFIX :❯ ❮ ${config.PREFIX || '.'} ❯*
 *┃👑 VERSION :❯ 1.0.0*
 *┃👑 TOTAL CMNDS :❯ ❮ ${totalCmds} ❯*
 *┃👑 UPTIME :❯ ${uptime()}*
 *┗──────────────⊷*
-*👑 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 WHATSAPP BOT 👑*`;
+*👑 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 WHATSAPP BOT 👑*`;
 
         await conn.sendMessage(from, { 
             text: status,

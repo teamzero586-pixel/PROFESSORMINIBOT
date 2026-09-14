@@ -44,7 +44,7 @@ module.exports = {
       const q = WYR_QUESTIONS[Math.floor(Math.random() * WYR_QUESTIONS.length)];
 
       const text =
-        `*🤔 WOULD YOU RATHER? — ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀*\n` +
+        `*🤔 WOULD YOU RATHER? — 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱*\n` +
         `━━━━━━━━━━━━━━━━━━━━\n\n` +
         `👤 *${senderName}* ne poocha!\n\n` +
         `*Tum kya choose karoge?*\n\n` +

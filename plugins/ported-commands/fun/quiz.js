@@ -48,7 +48,7 @@ module.exports = {
       const optionLetters = ['1️⃣', '2️⃣', '3️⃣', '4️⃣'];
 
       const questionText =
-        `*🎮 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 QUIZ TIME!*\n` +
+        `*🎮 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 QUIZ TIME!*\n` +
         `━━━━━━━━━━━━━━━━━━━━\n\n` +
         `❓ *${randomQ.q}*\n\n` +
         randomQ.options.map((opt, i) => `${optionLetters[i]} ${opt}`).join('\n') +

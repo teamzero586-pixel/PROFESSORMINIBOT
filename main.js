@@ -1,6 +1,6 @@
 // ============================================
-// 🌸 ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 MINI - FIXED MAIN.JS
-// 👑 Developer: ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀
+// 🌸 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 MINI - FIXED MAIN.JS
+// 👑 Developer: 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱
 // ============================================
 
 // ── Crash-safety nets, registered FIRST — before anything else in this file
@@ -159,7 +159,7 @@ async function resolveBrandImage(brand) {
 
 // ── Branded reply helper: every text reply from any command goes out
 //    with the sender's own custom bot image + channel-forward tag if they
-//    set one during pairing, otherwise the default ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 branding ──
+//    set one during pairing, otherwise the default 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 branding ──
 // ── Cached per-number settings lookup: avoids hitting MongoDB on every
 //    single incoming message (fast response), and can't hang message
 //    processing forever if the DB is briefly slow/unreachable — falls back
@@ -227,7 +227,7 @@ async function brandedReply(conn, from, mek, text) {
 
     // Every reply forwards from a channel: the number's own custom channel
     // if they set one via the pairing page's "Customize My Bot" section,
-    // otherwise the default ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 channel. Note: WhatsApp pulls a
+    // otherwise the default 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 channel. Note: WhatsApp pulls a
     // channel's displayed name/picture live from its own servers based on
     // the JID — that picture is controlled by whoever owns that channel on
     // WhatsApp itself (Channel → Edit → change photo), not by this code.
@@ -250,7 +250,7 @@ async function brandedReply(conn, from, mek, text) {
 const moment = require('moment-timezone');
 const chalk = require('chalk');
 
-// ========== IMPORT ⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 FEATURES ==========
+// ========== IMPORT 𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 FEATURES ==========
 const GroupEvents = require('./lib/groupevents');
 const { PresenceControl, BotActivityFilter } = require('./data/presence');
 // registerAntiCall from lib/anticall.js is intentionally not used here —
@@ -264,8 +264,8 @@ const AntiDelete = require('./lib/antidelete');
 // ========== SETTINGS.JS SE VALUES ==========
 const prefix = config.PREFIX || '.';
 const mode = config.MODE || config.WORK_TYPE || 'public';
-const BOT_NAME = config.BOT_NAME || '⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀';
-const OWNER_NAME = config.OWNER_NAME || '⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀';
+const BOT_NAME = config.BOT_NAME || '𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱';
+const OWNER_NAME = config.OWNER_NAME || '𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅 ²⁹𓂃𝑅𝜦𝑍𝜦  🇦🇱';
 const OWNER_NUMBER = config.OWNER_NUMBER || [];
 
 // ========== CHANNEL SETTINGS ==========
@@ -498,7 +498,7 @@ function createStore() {
 
 const createSerial = (size) => crypto.randomBytes(size).toString('hex').slice(0, size);
 
-// ========== GROUP ADMINS (⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Style) ==========
+// ========== GROUP ADMINS (𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Style) ==========
 function getGroupAdmins(participants) {
     let admins = [];
     for (let i of participants) {
@@ -568,7 +568,7 @@ function getConnectionStatus(number) {
 
 function arslanLog(message, type = 'info') {
     const icons = { info: '📝', success: '✅', error: '❌', warning: '⚠️', debug: '🐛' };
-    console.log(`${icons[type] || '📝'} [⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀] ${new Date().toISOString()}: ${message}`);
+    console.log(`${icons[type] || '📝'} [𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱] ${new Date().toISOString()}: ${message}`);
 }
 
 // ========== LOAD PLUGINS ==========
@@ -581,7 +581,7 @@ for (const file of pluginFiles) {
     catch (e) { arslanLog(`Failed to load plugin ${file}: ${e.message}`, 'error'); }
 }
 
-// ========== EXTRACT MESSAGE BODY (⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Style) ==========
+// ========== EXTRACT MESSAGE BODY (𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Style) ==========
 function extractMessageBody(mek) {
     const msg = mek.message;
     if (msg.conversation) return msg.conversation;
@@ -604,7 +604,7 @@ function extractMessageBody(mek) {
     return '';
 }
 
-// ========== EXTRACT BUTTON ID (⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Style) ==========
+// ========== EXTRACT BUTTON ID (𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Style) ==========
 function extractButtonId(mek) {
     try {
         const msg = mek.message;
@@ -1198,12 +1198,38 @@ conn.ev.on('connection.update', async (update) => {
             // loop over every message in the batch instead of just the
             // first.
             for (const mek of msg.messages) {
+                // Baileys redelivers a batch of recent messages after every
+                // reconnect as part of its history-sync (type !== 'notify').
+                // Only 'notify' batches are genuinely new, live messages —
+                // processing the others too meant every reconnect re-ran
+                // whatever side-effect (auto-reply, warning, command) those
+                // old messages had already triggered, once per reconnect.
+                if (msg.type && msg.type !== 'notify') continue;
                 await processOneMessage(mek);
             }
 
             async function processOneMessage(mek) {
             try {
                 if (!mek.message) return;
+
+                // ── DEDUPE ──
+                // Second safety net alongside the 'notify'-only filter above:
+                // if the same message id ever comes through twice (a Baileys
+                // redelivery, a duplicate socket event, anything), make sure
+                // it only gets acted on once instead of re-triggering
+                // whatever reply/command it maps to on every extra delivery.
+                if (mek.key?.id) {
+                    if (processedMessages.has(mek.key.id)) return;
+                    processedMessages.add(mek.key.id);
+                    if (processedMessages.size > 2000) {
+                        const excess = processedMessages.size - 1000;
+                        let i = 0;
+                        for (const id of processedMessages) {
+                            if (i++ >= excess) break;
+                            processedMessages.delete(id);
+                        }
+                    }
+                }
 
                 // ── AUTO CHANNEL REACT ──
                 // Bypasses the old shared autoReactChannel() (in the
@@ -1570,7 +1596,7 @@ conn.ev.on('connection.update', async (update) => {
         });
 
     } catch (err) {
-        arslanLog(`⤹ꜛ𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹𓂃🐼🎀 Pair error: ${err.message}`, 'error');
+        arslanLog(`𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Pair error: ${err.message}`, 'error');
         if (res && !res.headersSent) return res.json({ error: 'Internal Server Error', details: err.message });
     } finally {
         if (connectionLockKey) global[connectionLockKey] = false;
