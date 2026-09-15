@@ -63,6 +63,8 @@ const events = require('./arslan');
 const {
     connectdb,
     isDbConnected,
+    getGlobalSetting,
+    setGlobalSetting,
     saveSessionToMongoDB,
     getSessionFromMongoDB,
     deleteSessionFromMongoDB,
@@ -2689,6 +2691,51 @@ router.post('/api/admin/login', (req, res) => {
         return res.status(401).json({ error: 'Invalid password' });
     }
     return res.json({ status: 'ok' });
+});
+
+// ── Global bot settings (owner number / bot image) — lets the
+// admin panel change these across every command in one place,
+// without anyone needing to open MongoDB directly. Stored as
+// GlobalSetting docs and read via lib/botSettings.js.
+router.get('/api/admin/bot-settings', checkAdminCode, async (req, res) => {
+    try {
+        const ownerNumber = getGlobalSetting('globalOwnerNumber') ||
+            (Array.isArray(config.OWNER_NUMBER) ? config.OWNER_NUMBER[0] : config.OWNER_NUMBER);
+        const botImage = getGlobalSetting('globalBotImage') || null;
+        return res.json({
+            ownerNumber,
+            hasCustomImage: !!botImage,
+            imagePreview: botImage || null
+        });
+    } catch (e) {
+        return res.status(500).json({ error: e.message });
+    }
+});
+
+router.post('/api/admin/bot-settings', checkAdminCode, async (req, res) => {
+    try {
+        const { ownerNumber, botImage } = req.body || {};
+
+        if (ownerNumber !== undefined) {
+            const digitsOnly = String(ownerNumber).replace(/[^0-9]/g, '');
+            if (!digitsOnly) return res.status(400).json({ error: 'Owner number must contain digits (country code, no + or spaces)' });
+            setGlobalSetting('globalOwnerNumber', digitsOnly);
+        }
+
+        if (botImage !== undefined) {
+            if (botImage === '') {
+                setGlobalSetting('globalBotImage', '');
+            } else if (typeof botImage === 'string' && botImage.startsWith('data:image/')) {
+                setGlobalSetting('globalBotImage', botImage);
+            } else {
+                return res.status(400).json({ error: 'botImage must be a data:image/... base64 string, or an empty string to reset' });
+            }
+        }
+
+        return res.json({ status: 'ok' });
+    } catch (e) {
+        return res.status(500).json({ error: e.message });
+    }
 });
 
 router.get('/api/admin/users', checkAdminCode, async (req, res) => {

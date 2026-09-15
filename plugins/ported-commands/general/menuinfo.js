@@ -95,11 +95,8 @@ module.exports = {
       fs.writeFileSync(filePath, content, 'utf8');
 
       // Get bot image for thumbnail
-      const imagePath = path.join(__dirname, '../../utils/bot_image.jpg');
-      let imageBuffer = null;
-      if (fs.existsSync(imagePath)) {
-        imageBuffer = fs.readFileSync(imagePath);
-      }
+      const { getBotImage } = require('../../../lib/botSettings');
+      const imageBuffer = getBotImage(sock.brand);
 
       // Send as document with optional thumbnail
       await sock.sendMessage(from, {

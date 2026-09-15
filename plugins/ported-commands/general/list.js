@@ -84,10 +84,11 @@ module.exports = {
       menuText += `🔗 Telegram Channel: https://whatsapp.com/channel/0029Vb6ssQM6hENzm28KyQ1S`;
 
       // Try to send with bot image (like menu.js)
-      const imagePath = path.join(__dirname, '../../utils/bot_image.jpg');
-      
-      if (fs.existsSync(imagePath) && menuText.length <= MAX_CAPTION_LENGTH) {
-        const imageBuffer = fs.readFileSync(imagePath);
+      const { getBotImage } = require('../../../lib/botSettings');
+      const imagePath = getBotImage(sock.brand);
+
+      if (imagePath && menuText.length <= MAX_CAPTION_LENGTH) {
+        const imageBuffer = imagePath;
         await sock.sendMessage(extra.from, {
           image: imageBuffer,
           caption: menuText,

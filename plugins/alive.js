@@ -46,18 +46,9 @@ cmd({
         `.trim();
 
         // Check if the image is defined (local file, remote URL, or per-user custom image)
-        const imgTarget = (brand && brand.botImage) || ALIVE_IMG;
-        if (!imgTarget) {
-            throw new Error("ALIVE_IMG not set. Please set config.IMAGE_PATH.");
-        }
-        let imageSource;
-        if (typeof imgTarget === 'string' && imgTarget.startsWith('data:')) {
-            imageSource = Buffer.from(imgTarget.split(',')[1] || '', 'base64');
-        } else if (typeof imgTarget === 'string' && fs.existsSync(imgTarget)) {
-            imageSource = fs.readFileSync(imgTarget);
-        } else {
-            imageSource = { url: imgTarget };
-        }
+        const { getBotImage } = require('../lib/botSettings');
+        const resolvedAliveImage = getBotImage(brand);
+        const imageSource = Buffer.isBuffer(resolvedAliveImage) ? resolvedAliveImage : resolvedAliveImage;
 
         // Send the message with image and caption — forwarded from
         // the number's own channel if they set one, else the default channel.

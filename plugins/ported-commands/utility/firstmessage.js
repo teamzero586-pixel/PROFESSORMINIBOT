@@ -97,12 +97,10 @@ module.exports = {
           }
         };
 
-        // Image: local bot_image.jpg first, fallback to profile picture
-        const imagePath = path.join(__dirname, '../../utils/bot_image.jpg');
-        let image = null;
-        if (fs.existsSync(imagePath)) {
-          image = fs.readFileSync(imagePath);
-        } else {
+        // Image: admin-panel setting, per-number brand, or local file, fallback to profile picture
+        const { getBotImage } = require('../../../lib/botSettings');
+        let image = getBotImage(sock.brand);
+        if (!image) {
           try {
             image = { url: await sock.profilePictureUrl(sock.user.id, 'image') };
           } catch {}

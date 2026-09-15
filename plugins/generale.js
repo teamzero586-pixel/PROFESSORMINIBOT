@@ -57,7 +57,8 @@ cmd({
 },
 async(conn, mek, m, { from, myquoted }) => {
     const brand = conn.brand || null;
-    const ownerNumber = (brand && brand.ownerNumber) || (Array.isArray(config.OWNER_NUMBER) ? config.OWNER_NUMBER[0] : config.OWNER_NUMBER);
+    const { getOwnerNumber } = require('../lib/botSettings');
+    const ownerNumber = getOwnerNumber(brand);
     const displayName = (brand && brand.botName) || '𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱';
 
     // Création d'une vCard (Fiche contact)

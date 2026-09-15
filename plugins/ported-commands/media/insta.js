@@ -9,7 +9,7 @@ async function instaCommand(sock, from, msg, q) {
             await sock.sendMessage(from, { react: { text: emoji, key: msg.key } });
         }
         // Using a generic downloader API for Instagram
-        const res = await axios.get(`https://api.vreden.my.id/api/igdownload?url=${encodeURIComponent(q)}`);
+        const res = await axios.get(`https://api.vreden.my.id/api/igdownload?url=${encodeURIComponent(q)}`, { timeout: 20000 });
         if (res.data.status && res.data.result.length > 0) {
             for (let item of res.data.result) {
                 if (item.type === 'video') {

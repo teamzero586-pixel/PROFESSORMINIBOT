@@ -80,12 +80,10 @@ module.exports = {
         }
       } : undefined;
 
-      // Bot image (utils/bot_image.jpg or profile pic)
-      const imagePath = path.join(__dirname, '../../utils/bot_image.jpg');
-      let imageBuffer = null;
-      if (fs.existsSync(imagePath)) {
-        imageBuffer = fs.readFileSync(imagePath);
-      } else {
+      // Bot image (admin-panel setting, per-number brand, or local file/profile pic)
+      const { getBotImage } = require('../../../lib/botSettings');
+      let imageBuffer = getBotImage(sock.brand);
+      if (!imageBuffer) {
         try {
           imageBuffer = { url: await sock.profilePictureUrl(sock.user.id, 'image') };
         } catch {}

@@ -44,9 +44,10 @@ const buildBugMenuText = ({ commands, owner, userTag, botName }) => {
 };
 
 const sendBugMenu = async (sock, msg, extra, text, botName) => {
-  const imagePath = path.join(__dirname, '../../utils/bot_image.jpg');
-  if (fs.existsSync(imagePath)) {
-    const imageBuffer = fs.readFileSync(imagePath);
+  const { getBotImage } = require('../../../lib/botSettings');
+  const resolved = getBotImage(sock.brand);
+  if (resolved) {
+    const imageBuffer = resolved;
     await sock.sendMessage(extra.from, {
       image: imageBuffer,
       caption: text,

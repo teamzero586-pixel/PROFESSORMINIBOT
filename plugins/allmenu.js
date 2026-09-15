@@ -140,15 +140,9 @@ cmd({
 ${menuText}
 ${theme.footer(botDisplayName)}`.trim();
 
-        const imgTarget = (brand && brand.botImage) || config.IMAGE_PATH;
-        let menuImageSource;
-        if (typeof imgTarget === 'string' && imgTarget.startsWith('data:')) {
-            menuImageSource = Buffer.from(imgTarget.split(',')[1] || '', 'base64');
-        } else if (typeof imgTarget === 'string' && fs.existsSync(imgTarget)) {
-            menuImageSource = fs.readFileSync(imgTarget);
-        } else {
-            menuImageSource = { url: imgTarget || "https://files.catbox.moe/prkkzj.png" };
-        }
+        const { getBotImage } = require('../lib/botSettings');
+        const resolvedImage = getBotImage(brand);
+        const menuImageSource = Buffer.isBuffer(resolvedImage) ? resolvedImage : (resolvedImage || { url: "https://files.catbox.moe/prkkzj.png" });
 
         const menuPayload = {
             image: menuImageSource,
