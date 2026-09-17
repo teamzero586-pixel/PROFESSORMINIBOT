@@ -1,14 +1,13 @@
 /**
  * Song Downloader - Download audio from YouTube (.song / .play)
- * Uses the exact same download logic as the working .yt command to fetch
- * the video (video+audio together — this is what actually works), then
- * strips it down to MP3 with ffmpeg. This avoids depending on the
- * unreliable audio-only APIs that were failing before.
+ * Tries direct-MP3 APIs first (fast, no conversion needed); if every one
+ * of those is down, falls back to downloading the video (video+audio
+ * together — proven to work) and stripping it to MP3 with ffmpeg.
  */
 
 const yts = require('yt-search');
 const { toAudio } = require('../../utils/converter');
-const { downloadYoutube } = require('../../../lib/ytDownloader');
+const { downloadYoutubeAudio } = require('../../../lib/ytDownloader');
 
 module.exports = {
   name: 'song',
@@ -44,12 +43,10 @@ module.exports = {
 
       await sock.sendMessage(chatId, { text: `⏳ Downloading *${title || 'your song'}*...` }, { quoted: msg });
 
-      const videoInfo = await downloadYoutube(videoUrl);
-      const finalTitle = videoInfo.title || title || 'song';
+      const audioInfo = await downloadYoutubeAudio(videoUrl, (buf) => toAudio(buf, 'mp4'));
+      const finalTitle = audioInfo.title || title || 'song';
 
-      // Strip video, keep audio, encode to MP3 — ffmpeg reads the format
-      // from the file content itself, so feeding it the whole mp4 is fine.
-      const mp3Buffer = await toAudio(videoInfo.buffer, 'mp4');
+      const mp3Buffer = audioInfo.buffer;
       if (!mp3Buffer || mp3Buffer.length === 0) {
         throw new Error('Audio conversion returned empty file.');
       }
