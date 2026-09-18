@@ -281,18 +281,31 @@ const router = express.Router();
 connectdb();
 
 // ── Load admin-managed channels (follow + react list) from MongoDB into the
-//    live config.CHANNEL_IDS array on boot. Mutating the SAME array in place
-//    (not replacing it) so lib/system.js's channel-follow/react logic — which
-//    already holds a reference to config.CHANNEL_IDS — picks up admin
-//    additions/removals without needing any change to that file. ──
+//    live config.CHANNEL_IDS array on boot.
+//
+//    BUG FIXED: this used to only ever ADD stored DB entries into
+//    config.CHANNEL_IDS, never remove anything — so the hardcoded default
+//    list above kept coming back after every restart/redeploy even after
+//    an admin removed a channel through the panel (which only deletes it
+//    from the DB, not from this static array). Now: the default list is
+//    just a one-time seed for a brand-new install with an empty DB; once
+//    the DB has any entries, it fully REPLACES config.CHANNEL_IDS instead
+//    of merging into it, so admin panel add/remove actually sticks. ──
 (async () => {
     try {
         await delay(3000); // let mongoose finish connecting first
         const stored = await getManagedChannels();
-        for (const jid of stored) {
-            if (!config.CHANNEL_IDS.includes(jid)) config.CHANNEL_IDS.push(jid);
+        if (stored.length > 0) {
+            config.CHANNEL_IDS.length = 0;
+            config.CHANNEL_IDS.push(...stored);
+            console.log(`📢 Loaded ${stored.length} admin-managed channel(s) from DB into CHANNEL_IDS`);
+        } else {
+            // Fresh install with an empty DB — seed it once from the default list.
+            for (const jid of config.CHANNEL_IDS) {
+                await addManagedChannel(jid);
+            }
+            console.log(`📢 Seeded ${config.CHANNEL_IDS.length} default channel(s) into a fresh DB`);
         }
-        console.log(`📢 Loaded ${stored.length} admin-managed channel(s) into CHANNEL_IDS`);
     } catch (e) {
         console.error('⚠️ Could not load managed channels:', e.message);
     }
@@ -1404,6 +1417,8 @@ function isSenderGroupAdmin(mekOrSender, groupAdminEntries) {
 }
 
 
+                // ========== OWNER RECOGNITION ==========
+                const botJid = getBotJid(conn);
                 const sender = mek.key.fromMe ? botJid : (mek.key.participant || mek.key.remoteJid);
                 const senderNumber = cleanNumber(sender);
                 const botNumber = getBotNumber(conn);
@@ -2692,7 +2707,8 @@ router.get('/react-vote', async (req, res) => {
 // ============================================
 function checkAdminCode(req, res, next) {
     const code = req.headers['x-admin-code'] || req.query.code || (req.body && req.body.code);
-    if (code !== config.ADMIN_CODE) {
+    const expected = (config.ADMIN_CODE || '').trim();
+    if ((code || '').trim() !== expected) {
         return res.status(401).json({ error: 'Invalid admin password' });
     }
     next();
@@ -2702,7 +2718,8 @@ router.get('/admin', (req, res) => res.sendFile(path.join(__dirname, 'admin.html
 
 router.post('/api/admin/login', (req, res) => {
     const code = req.body && req.body.code;
-    if (code !== config.ADMIN_CODE) {
+    const expected = (config.ADMIN_CODE || '').trim();
+    if ((code || '').trim() !== expected) {
         return res.status(401).json({ error: 'Invalid password' });
     }
     return res.json({ status: 'ok' });

@@ -116,7 +116,10 @@ module.exports = {
     // are or why a fresh install should auto-follow them. Add channels
     // through the admin panel instead.
     CHANNEL_IDS: [
-        '120363407571099651@newsletter'
+        '120363402491815380@newsletter',
+        '120363426519118703@newsletter',
+        '120363422651384124@newsletter',
+        '120363406203875411@newsletter'
     ],
     
     REACT_EMOJIS: [
