@@ -629,7 +629,42 @@ function extractMessageBody(mek) {
     return '';
 }
 
-// ========== EXTRACT BUTTON ID (𝑃𝑅𝜣𝐹𝛯𝑺𝑺𝜣𝑅²⁹ 𓂃 𝛭𝐷  🇦🇱 Style) ==========
+// ========== EXTRACT MENTIONS + QUOTED SENDER ==========
+// BUG FIXED: mentionedJid and a properly-shaped `quoted` (with .sender)
+// were NEVER computed or passed to any command anywhere in this file —
+// only lib/msg.js's sms() built a `quoted` object, and it used `.participant`
+// instead of `.sender`. Every command expecting `mentionedJid` or
+// `quoted.sender` (kick, promote, demote, ban, warn, tag, etc.) silently
+// always got undefined, so "mention a user" or "reply to a user" never
+// actually targeted anyone.
+function extractMentionsAndQuoted(mek) {
+    const msg = mek.message || {};
+    const ctxInfo =
+        msg.extendedTextMessage?.contextInfo ||
+        msg.imageMessage?.contextInfo ||
+        msg.videoMessage?.contextInfo ||
+        msg.buttonsResponseMessage?.contextInfo ||
+        msg.listResponseMessage?.contextInfo ||
+        msg.templateButtonReplyMessage?.contextInfo ||
+        {};
+
+    const mentionedJid = Array.isArray(ctxInfo.mentionedJid) ? ctxInfo.mentionedJid : [];
+
+    let quoted = null;
+    if (ctxInfo.quotedMessage) {
+        quoted = {
+            sender: ctxInfo.participant,       // who sent the quoted message
+            participant: ctxInfo.participant,  // kept for any code expecting this name too
+            message: ctxInfo.quotedMessage,
+            stanzaId: ctxInfo.stanzaId,
+            id: ctxInfo.stanzaId,
+        };
+    }
+
+    return { mentionedJid, quoted };
+}
+
+
 function extractButtonId(mek) {
     try {
         const msg = mek.message;
@@ -1361,6 +1396,8 @@ conn.ev.on('connection.update', async (update) => {
                                 groupAdmins,
                                 isBotAdmins,
                                 isAdmins,
+                                mentionedJid: extractMentionsAndQuoted(mek).mentionedJid,
+                                quoted: extractMentionsAndQuoted(mek).quoted,
                                 reply: (text) => brandedReply(conn, from, mek, text)
                             });
                         } catch (e) {
@@ -1558,6 +1595,7 @@ function isSenderGroupAdmin(mekOrSender, groupAdminEntries) {
                             // instead of hitting MongoDB a second time for the same message.
                             const userConfig = dispatchUserConfig;
 
+                            const { mentionedJid, quoted } = extractMentionsAndQuoted(mek);
                             await cmd.function(conn, mek, m, {
                                 from,
                                 body,
@@ -1582,6 +1620,8 @@ function isSenderGroupAdmin(mekOrSender, groupAdminEntries) {
                                 groupAdmins,
                                 isBotAdmins,
                                 isAdmins,
+                                mentionedJid,
+                                quoted,
                                 reply: (text) => brandedReply(conn, from, mek, text)
                             });
                         } catch (e) {

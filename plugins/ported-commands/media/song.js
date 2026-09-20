@@ -60,7 +60,7 @@ module.exports = {
 
     } catch (err) {
       console.error('Song command error:', err.message);
-      await sock.sendMessage(chatId, { text: `❌ Failed to download song: ${err.message}` }, { quoted: msg });
+      await sock.sendMessage(chatId, { text: `❌ Could not download that song right now. Please try again in a bit.` }, { quoted: msg });
     }
   }
 };

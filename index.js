@@ -56,7 +56,7 @@ app.listen(port, () => {
 // that keeps working even in the one case this can't.
 const config = require('./config');
 if (config.APP_URL) {
-    const KEEP_ALIVE_INTERVAL_MS = 20 * 60 * 1000; // 20 minutes
+    const KEEP_ALIVE_INTERVAL_MS = 4 * 60 * 1000; // 4 minutes — must be shorter than any host's idle-sleep window (was 20 min, longer than the sleep timeout itself, so it never fired in time)
     const https = require('https');
     setInterval(() => {
         try {
@@ -69,7 +69,7 @@ if (config.APP_URL) {
             console.error('[KeepAlive] Self-ping error:', e.message);
         }
     }, KEEP_ALIVE_INTERVAL_MS);
-    console.log(`💤 Keep-alive self-ping active → ${config.APP_URL}/ping every 20 min`);
+    console.log(`💤 Keep-alive self-ping active → ${config.APP_URL}/ping every 4 min`);
 } else {
     console.log('⚠️  APP_URL not set — keep-alive self-ping disabled. Set APP_URL in Config Vars, and/or add an external uptime monitor, or this dyno may sleep and drop all WhatsApp connections.');
 }
